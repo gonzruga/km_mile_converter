@@ -36,10 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
     fontWeight: FontWeight.w700,
   );
 
-  final List<String> _mesaures = [
-    'Kilometers',
-    'Miles'
-  ];
+  final List<String> _mesaures = ['Kilometers', 'Miles'];
 
   double _value;
   String _fromMesaures = 'Kilometers';
@@ -49,13 +46,11 @@ class _HomeScreenState extends State<HomeScreen> {
   final Map<String, int> _mesauresMap = {
     'Kilometers': 0,
     'Miles': 1,
-
   };
 
   dynamic _conversionMultipliers = {
     '0': [1, 0.621371],
     '1': [1.60934, 1],
-
   };
 
   @override
@@ -105,7 +100,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     )
                   ],
                 ),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -128,8 +122,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
-
-
 
             // CONVERTING
             MaterialButton(
